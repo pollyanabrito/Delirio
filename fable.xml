@@ -1,6 +1,197 @@
 <fable>
-	<page>
+  <page background="inicio.png">
+   
+    <agent img="transparente.png" x="190" y="160" width="120" height="40" on-touch="_NEXT_PAGE" />
+
+  </page>
   
+  <page background="capa.png">
+   
+    <agent img="icone_conf.png" x="350" y="200" width="68" height="68" on-touch="_GOTO_PAGE:5"/>
+    <agent img="icone_apresenta.png" x="160" y="170" width="70" height="70" on-touch="_GOTO_PAGE:6"/>
+    <agent img="icone_yt.png" x="300" y="350" width="70" height="70" on-touch="_NEXT_PAGE"/>
+    <agent img="icone_texto.png" x="80" y="400" width="90" height="90" on-touch="_GOTO_PAGE:4"/>
     
   </page>
-</fable>
+  
+	<page background="capa.png">
+  
+    <agent img="yt.png" x="0" y="40" width="500" height="500" on-touch="trans1"/>
+    <agent video="delusion.mp4" x="32" y="148" width="430" height="280"/>
+    <agent img="transparente.png" x="460" y="475" width="20" height="20" on-touch="_GOTO_PAGE:2"/>
+    
+   </page>
+  
+  <page background="capa.png">
+  
+    <agent img="notifica.png" x="0" y="115" width="500" height="500"/>
+    <agent img="transparente.png" x="217" y="335" width="70" height="30" on-touch="_GOTO_PAGE:2"/>
+    
+  </page>
+  
+  <page background="capa.png">
+      
+    <agent img="painel.png" x="10" y="50" width="480" height="480"/>
+    <agent img="transparente.png" x="160" y="200" width="80" height="80" on-touch="_GOTO_PAGE:2"/>
+  
+  </page>
+
+  <page background="Chuang.png">
+ 
+    <agent img="borb.png" x="320" y="430" width="50" height="50" draggable="true" on-drop="borb2">
+  
+    </agent>
+    
+    <agent img="xpreto.png" x="430" y="450" width="30" height="30" on-touch="_GOTO_PAGE:2"/>
+
+    <agent img="pensamento.png" x="245" y="260" width="115" height="115" drop-zone="borb2">
+  
+    <borb2 img="Chuangbor.png" x="0" y="0" width="500" height="500" />
+        
+    </agent>
+
+      <agent text="Agora vamos falar de Chuang-Tzu, que dormiu, um dia, e sonhou que era uma borboleta." x="40" y="400" width="300" on-touch="tex--to2"> 
+      <texto2 text="Por horas, ele voou sob o sol de inverno, até não lembrar mais que ele era Chuang-Tzu." on-touch="texto3" />
+      <texto3 text="De repente, ele acordou e era Chuang-Tzu de novo." on-touch="texto4"/>
+    	<texto4 text="Mas ele não sabia... Chuang-Tzu havia sonhado que era uma borboleta, ou uma borboleta estava sonhando que era Chuang-Tzu?" />
+    
+    </agent>
+    
+    <agent img="xpreto.png" x="430" y="450" width="30" height="30" on-touch="_GOTO_PAGE:2"/>
+   
+    <agent img="esqcaveira.png" x="430" y="22" width="57" height="57" on-touch="_NEXT_PAGE"/>
+
+     
+  </page>
+    
+  <page background="fundo.png">
+    
+    <agent img="ovoant.png" x="0" y="0" width="500" height="500"/>
+    <agent img="calendario.png" x="320" y="280" width="168" height="168"/>
+    <agent img="postit.png" x="20" y="300" width="150" height="150"/>
+      
+    <agent img="pinto.png" x="460" y="375" width="29" height="29" draggable="true"	on-drop="nas"/>
+    <agent  img="transparente.png" x="465" y="310" width="20" height="20" drop-zone="nas">
+      <nas img="pintovo.png" x="0" y="0" width="500" height="500"/>
+    
+    </agent>
+    
+    <agent text="Uma alucinação começa como uma ideia qualquer." x="40" y="450" width="400" on-touch="texto2" > 
+      <texto2 text="Como um ovo." on-touch="texto3"/>
+      <texto3 text="Normal por fora. Perfeitamente formado." on-touch="texto4"/>
+    	<texto4 text="Por fora, não dá para saber se há algo errado. É o lado de dentro que importa."/>
+      
+    </agent>
+    
+    <agent img="xpreto.png" x="430" y="450" width="30" height="30" on-touch="_GOTO_PAGE:2"/>
+   
+    <agent img="esqcaveira.png" x="440" y="22" width="50" height="50" on-touch="_NEXT_PAGE"/>
+    <agent img="bocaveira.png" x="10" y="22" width="50" height="50" on-touch="_PREV_PAGE"/>
+    
+  </page>
+  
+  <page background="rua.jpg">
+    
+    <agent img="fundotexto.png" x="10" y="138" width="480" height="570"/>
+
+    
+    <agent text="Albert teve uma ideia." x="110" y="430" width="400" on-touch="texto2" > 
+    <texto2 text="Um dia, enquanto andava, ele tropeçou." on-touch="texto3"/>
+    <texto3 text="E, por um momento, a perna direita parecia não pertencer a ele." on-touch="texto4"/>
+   	<texto4 text="É assim que começa." />
+        
+    </agent>
+    
+    <agent img="hom2.png" x="-80" y="0" width="300" height="300" drop-zone="hom4">   
+    
+    <hom4 img="hom4.png" x="-20" y="0" width="300" height="300" on-touch="hom5"/>
+    <hom5 img="hom5.png" x="80" y="0" width="300" height="300" on-touch="hom6"/>
+    <hom6 img="hom6.png" x="190" y="0" width="300" height="300" on-touch="hom7"/>
+    <hom7 img="hom7.png" x="230" y="0" width="300" height="300" on-touch="hom8"/>
+    <hom8 img="hom8.png" x="250" y="0" width="300" height="300" />
+ 
+    </agent>
+      
+    <agent img="pedra.png" x="330" y="30" width="70" height="70" draggable="true"	on-drop="hom4"/>
+    
+    <agent img="xpreto.png" x="430" y="450" width="30" height="30" on-touch="_GOTO_PAGE:2"/>
+
+    <agent img="esqcaveira.png" x="440" y="22" width="50" height="50" on-touch="_NEXT_PAGE"/>
+    <agent img="bocaveira.png" x="10" y="22" width="50" height="50" on-touch="_PREV_PAGE"/>
+  
+  </page>
+  
+  <page background="fundo.png">
+   
+   <agent img="lampada.png" x="400" y="340" width="100" height="100" draggable="true"	on-drop="podre1"/>
+    <agent img="muscu.png" x="80" y="0" width="350" height="350" on-touch="dor" drop-zone="podre1">
+    <dor img="mu.png" x="80" y="0" width="350" height="350" />
+      
+    <podre1 img="podre1.png" x="0" y="0" width="500" height="500" on-touch="podre2"/>
+    <podre2 img="podre2.png" x="0" y="0" width="500" height="500" on-touch="podre3"/>
+    <podre3 img="podre3.png" x="0" y="0" width="500" height="500" on-touch="podre4"/>
+    <podre4 img="podre4.png" x="0" y="0" width="500" height="500" on-touch="podre5"/>
+    <podre5 img="podre5.png" x="0" y="0" width="500" height="500" on-touch="podre6"/>
+    <podre6 img="podre6.png" x="0" y="0" width="500" height="500" on-touch="podre7"/>
+    <podre7 img="podre7.png" x="0" y="0" width="500" height="500" on-touch="podre8"/>
+    <podre8 img="podre8.png" x="0" y="0" width="500" height="500" on-touch="podre10"/>
+    <podre10 img="podre10.png" x="0" y="0" width="500" height="500"/>
+
+    </agent>
+    
+      <agent text="A perna era de Albert. Estava presa ao corpo dele e, ao beliscar, ele sentia dor."x="40" y="400" width="400" on-touch="texto2">
+      <texto2 text="Mas, apesar disso, a ideia cresceu." on-touch="texto3"/>
+      <texto3 text="Esse é o poder de uma ideia."on-touch="texto4"/> 
+      <texto4 text="A cada dia, Albert tinha mais certeza de que a perna não era dele." on-touch="texto5"/>
+      <texto5 text="Ele decidiu que não a queria mais. E então, um dia, ele foi até a loja de ferramentas."/> 
+        
+  </agent>
+
+      <agent img="play.png" x="440" y="22" width="40" height="40" on-touch="_NEXT_PAGE"/>
+      <agent img="bocaveira.png" x="10" y="22" width="50" height="50" on-touch="_PREV_PAGE"/>
+      <agent img="xpreto.png" x="430" y="450" width="30" height="30" on-touch="_GOTO_PAGE:2"/>
+
+  </page>
+    
+  <page background="podre10.png" soundtrack="corte.wav">
+ 
+    <agent img="esqcaveira.png" x="440" y="22" width="50" height="50" on-touch="_NEXT_PAGE"/>
+    <agent img="bocaveira.png" x="10" y="22" width="50" height="50" on-touch="_PREV_PAGE"/>
+    
+    <agent text="Ele decidiu que não a queria mais. E então, um dia, ele foi até a loja de ferramentas." x="40" y="400" width="400"/>  
+   
+    <agent img="xpreto.png" x="430" y="450" width="30" height="30" on-touch="_GOTO_PAGE:2"/>
+    
+    <agent img="audio.png" x="40" y="130" width="400" height="400"/>
+
+  </page>  
+ 
+  <page background="podre11.png" >
+ 
+    <agent img="pensoruim.png" x="330" y="360" width="180" height="180" draggable="true"	on-drop="podre1"/>
+    
+    <agent  img="Pintotrans.png" x="135" y="105" width="180" height="180" drop-zone="podre1"	>
+      <podre1 img="podre12.png" x="0" y="0" width="500" height="500" on-touch="podre2"/>
+      <podre2 img="podre13.png" x="0" y="0" width="500" height="500" on-touch="podre3"/>
+      <podre3 img="podre14.png" x="0" y="0" width="500" height="500" on-touch="celebro"/>
+      <celebro img="celebro.jpg" x="0" y="0" width="500" height="500"/>
+
+    </agent>
+    
+    
+    
+    <agent text="Uma simples ideia não é o bastante."x="40" y="400" width="400" on-touch="texto2">
+      <texto2 text="Nós temos ideias o tempo todo." on-touch="texto3"/>
+      <texto3 text="Pensamentos aleatórios e teorias. A maioria morre antes de crescer." on-touch="texto4"/>
+      <texto4 text="Para que uma alucinação prospere, ideias mais racionais precisam ser rejeitadas, destruídas." on-touch="texto5"/> 
+      <texto5 text="Só assim a alucinação pode perseverar e virar uma psicose."/> 
+    </agent>
+
+    <agent img="xpreto.png" x="430" y="450" width="30" height="30" on-touch="_GOTO_PAGE:2"/>
+
+    <agent img="bocaveira.png" x="10" y="22" width="50" height="50" on-touch="_PREV_PAGE"/>
+
+    <agent img="icone_home.png" x="420" y="22" width="50" height="50" on-touch="_GOTO_PAGE:2"/>
+    
+  </page>    
+  

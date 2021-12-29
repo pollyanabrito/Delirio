@@ -50,7 +50,7 @@
         
     </agent>
 
-      <agent text="Agora vamos falar de Chuang-Tzu, que dormiu, um dia, e sonhou que era uma borboleta." x="40" y="400" width="300" on-touch="tex--to2"> 
+      <agent text="Agora vamos falar de Chuang-Tzu, que dormiu, um dia, e sonhou que era uma borboleta." x="40" y="400" width="300" on-touch="texto2"> 
       <texto2 text="Por horas, ele voou sob o sol de inverno, até não lembrar mais que ele era Chuang-Tzu." on-touch="texto3" />
       <texto3 text="De repente, ele acordou e era Chuang-Tzu de novo." on-touch="texto4"/>
     	<texto4 text="Mas ele não sabia... Chuang-Tzu havia sonhado que era uma borboleta, ou uma borboleta estava sonhando que era Chuang-Tzu?" />
